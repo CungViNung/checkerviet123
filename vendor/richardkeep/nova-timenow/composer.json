@@ -1,0 +1,48 @@
+{
+    "name": "richardkeep/nova-timenow",
+    "description": "A Laravel Nova card to display the current time from different timezones in the world.",
+    "keywords": [
+        "laravel",
+        "nova",
+        "card",
+        "timezone",
+        "datetime",
+        "card"
+    ],
+    "homepage": "https://github.com/richardkeep/nova-timenow",
+    "authors": [
+        {
+            "name": "Richard Keep",
+            "email": "r.kipsang@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0",
+        "laravel/nova": "*"
+    },
+      "repositories": [
+      {
+        "type": "path",
+        "url": "../nova"
+      }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Richardkeep\\NovaTimenow\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Richardkeep\\NovaTimenow\\TimenowServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+     "minimum-stability": "dev",
+    "prefer-stable": true
+}
