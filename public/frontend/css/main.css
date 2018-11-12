@@ -93,7 +93,7 @@ $black			: #222;
 
 body {
   color: #777777;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 1.625em;
@@ -833,6 +833,10 @@ td, th {
   padding-left: 10px;
 }
 
+.logo {
+  width: 120px;
+}
+
 .large-gutters {
   margin-right: -45px;
   margin-left: -45px;
@@ -1047,8 +1051,8 @@ header {
   text-decoration: none;
   display: inline-block;
   color: #fff;
-  font-weight: 400;
-  font-size: 12px;
+  font-weight: 600;
+  font-size: 13px;
   text-transform: uppercase;
   outline: none;
 }
@@ -1074,7 +1078,7 @@ header {
   transition: 0.3s;
   display: block;
   font-size: 12px;
-  text-transform: none;
+  text-transform: uppercase;
 }
 
 .nav-menu ul li:hover > a {
@@ -1445,7 +1449,7 @@ body {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   overflow: hidden;
-  height: 400px;
+  height: 405px;
 }
 
 .top-post-area .top-post-left .feature-image-thumb .overlay-bg {
@@ -1458,6 +1462,7 @@ body {
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  height: 405px;
 }
 
 .top-post-area .top-post-left:hover .feature-image-thumb img {
@@ -1468,6 +1473,7 @@ body {
   position: absolute;
   bottom: 30px;
   left: 40px;
+  word-wrap: break-word;
 }
 
 @media (max-width: 767px) {
@@ -1492,6 +1498,7 @@ body {
 .top-post-area .top-post-left .top-post-details h3 {
   color: #fff;
   margin: 20px 0px;
+  font-size: 20px;
 }
 
 @media (max-width: 767px) {
@@ -1547,6 +1554,7 @@ body {
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  height: 200px;
 }
 
 .top-post-area .top-post-right .single-top-post .feature-image-thumb .overlay-bg {
@@ -1579,6 +1587,7 @@ body {
   color: #fff;
   margin-top: 20px;
   margin-bottom: 10px;
+  font-size: 15px;
 }
 
 @media (max-width: 767px) {
@@ -1863,6 +1872,7 @@ body {
 
 .popular-post-wrap .single-popular-post .feature-img {
   overflow: hidden;
+  height: 200px;
 }
 
 .popular-post-wrap .single-popular-post .feature-img .overlay-bg {
@@ -2784,9 +2794,9 @@ body {
   width: 100%;
 }
 
-.single-post-wrap .feature-img-thumb .overlay-bg {
+/*.single-post-wrap .feature-img-thumb .overlay-bg {
   background: rgba(0, 0, 0, 0.4);
-}
+}*/
 
 .single-post-wrap .content-wrap {
   padding: 20px;

@@ -24,7 +24,7 @@
 			<div class="row justify-content-between align-items-center">
 				<div class="col-lg-4 col-md-4 col-sm-12 logo-left no-padding">
 					<a href="{{route('index')}}">
-						<img class="img-fluid" src="img/logo.png" alt="">
+						<img class="img-fluid logo" src="img/ml.png" alt="">
 					</a>
 				</div>
 				<div class="col-lg-8 col-md-8 col-sm-12 logo-right no-padding ads-banner">
@@ -37,18 +37,17 @@
 		<div class="row align-items-center justify-content-between">
 			<nav id="nav-menu-container">
 				<ul class="nav-menu">
-					<li class="menu-active"><a href="{{route('index')}}">Home</a></li>
 					@foreach($menuCate as $menu)
 					@if($menu->childs->count() > 0)
-					<li class="menu-has-children"><a href="{{route('category', ['id'=>$menu->id])}}">{{$menu->name}}</a>
+					<li class="menu-has-children"><a href="{{route('category', ['id'=>$menu->id, 'slug'=>$menu->slug])}}">{{$menu->name}}</a>
 						<ul>
 							@foreach($menu->childs as $sub)
-							<li><a href="{{route('category', ['id'=>$sub->id])}}">{{$sub->name}}</a></li>
+							<li><a href="{{route('category', ['id'=>$sub->id, 'slug'=>$sub->slug])}}">{{$sub->name}}</a></li>
 							@endforeach
 						</ul>
 					</li>
 					@else
-					<li><a href="{{route('category', ['id'=>$menu->id])}}">{{$menu->name}}</a></li>
+					<li><a href="{{route('category', ['id'=>$menu->id, 'slug'=>$menu->slug])}}">{{$menu->name}}</a></li>
 					@endif
 					@endforeach
 				</ul>

@@ -47,9 +47,7 @@ class User extends Resource
             Avatar::make('Avatar')
                 ->disk('public')
                 ->path('user')
-                ->rules('required')
-                ->storeOriginalName('avatar')
-                ->prunable(),
+                ->rules('required'),
 
             Text::make('Name')
                 ->sortable()

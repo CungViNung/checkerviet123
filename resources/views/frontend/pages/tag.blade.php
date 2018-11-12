@@ -1,5 +1,5 @@
 @extends('frontend.layout.single')
-@section('title', 'Tag')
+@section('title') {{$tags->name}} @endsection
 @section('page-header')
 <!-- Start top-post Area -->
 <section class="top-post-area pt-10">
@@ -14,7 +14,7 @@
 			<div class="col-lg-12">
 				<div class="news-tracker-wrap">
 					@foreach($breakingNew as $brk)
-					<h6><span>Breaking News:</span>   <a href="{{route('detail', ['id'=>$brk->id])}}">{{$brk->title}}</a></h6>
+					<h6><span>Breaking News:</span>   <a href="{{route('detail', ['id'=>$brk->id, 'slug'=>$brk->slug])}}">{{$brk->title}}</a></h6>
 					@endforeach
 				</div>
 			</div>
@@ -35,7 +35,7 @@
 				<img class="img-fluid" src="{{asset('storage'.$post->image)}}" alt="">
 			</div>
 			<ul class="tags">
-				<li><a href="#">{{$post->category->name}}</a></li>
+				<li><a href="{{route('category', ['id'=>$post->category->id, 'slug'=>$post->category->slug])}}">{{$post->category->name}}</a></li>
 			</ul>
 		</div>
 		<div class="col-lg-7 post-right">

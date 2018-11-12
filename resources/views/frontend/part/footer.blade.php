@@ -5,34 +5,25 @@
 				<h4>Magazine</h4>
 				<ul>
 					@foreach($menuFooter as $menu)
-					<li><a href="#">{{$menu->name}}</a></li>
+					<li><a href="{{route('category', ['id'=>$menu->id, 'slug'=>$menu->slug])}}">{{$menu->name}}</a></li>
 					@endforeach
 				</ul>
 			</div>
-			<div class="col-lg-2 col-md-6 single-footer-widget">
-				<h4>Quick Links</h4>
+			<div class="col-lg-3 col-md-6 single-footer-widget">
+				<h4>Bóng đá</h4>
 				<ul>
 					@foreach($hedieuhanh as $hdh)
-					<li><a href="#">{{$hdh->name}}</a></li>
+					<li><a href="{{route('category', ['id'=>$hdh->id, 'slug'=>$hdh->slug])}}">{{$hdh->name}}</a></li>
 					@endforeach
 				</ul>
 			</div>
-			<div class="col-lg-2 col-md-6 single-footer-widget">
-				<h4>Features</h4>
+			<div class="col-lg-3 col-md-6 single-footer-widget">
+				<h4>Myleague.vn</h4>
 				<ul>
-					<li><a href="#">Jobs</a></li>
-					<li><a href="#">Brand Assets</a></li>
-					<li><a href="#">Investor Relations</a></li>
-					<li><a href="#">Terms of Service</a></li>
-				</ul>
-			</div>
-			<div class="col-lg-2 col-md-6 single-footer-widget">
-				<h4>Resources</h4>
-				<ul>
-					<li><a href="#">Guides</a></li>
-					<li><a href="#">Research</a></li>
-					<li><a href="#">Experts</a></li>
-					<li><a href="#">Agencies</a></li>
+					<li><a href="https://myleague.vn/">Tạo giải đấu</a></li>
+					<li><a href="https://myleague.vn/league">Tìm giải đấu</a></li>
+					<li><a href="https://myleague.vn/competitor">Tìm đội</a></li>
+					<li><a href="https://www.timdoinhanh.com/">Tìm đối nhanh</a></li>
 				</ul>
 			</div>
 			<div class="col-lg-3 col-md-6 single-footer-widget">
@@ -51,7 +42,7 @@
 		</div>
 		<div class="footer-bottom row align-items-center">
 			<p class="footer-text m-0 col-lg-8 col-md-12"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-				Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+				Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | From <a href="http://ldh.biz/" target="_blank">Nitro Zeus</a> with <i class="fa fa-heart-o" aria-hidden="true"></i>
 				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 				<div class="col-lg-4 col-md-12 footer-social">
 					<a href="#"><i class="fa fa-facebook"></i></a>

@@ -1,5 +1,5 @@
 @extends('frontend.layout.single')
-@section('title', 'Tìm kiếm')
+@section('title') Từ khóa: {{$keyword}} @endsection
 @section('page-header')
 <!-- Start top-post Area -->
 <section class="top-post-area pt-10">
@@ -13,7 +13,7 @@
 			<div class="col-lg-12">
 				<div class="news-tracker-wrap">
 					@foreach($breakingNew as $brk)
-					<h6><span>Breaking News:</span>   <a href="{{route('detail', ['id'=>$brk->id])}}">{{$brk->title}}</a></h6>
+					<h6><span>Breaking News: </span><a href="{{route('detail', ['id'=>$brk->id, 'slug'=>$brk->slug])}}">{{$brk->title}}</a></h6>
 					@endforeach
 				</div>
 			</div>
@@ -31,15 +31,15 @@
 		<div class="col-lg-5 post-left">
 			<div class="feature-img relative">
 				<div class="overlay overlay-bg"></div>
-				<a href="{{route('detail', ['id'=>$item->id])}}"><img class="img-fluid" src="{{asset('storage/'.$item->image)}}" alt=""></a>
+				<a href="{{route('detail', ['id'=>$item->id, 'slug'=>$item->slug])}}"><img class="img-fluid" src="{{asset('storage/'.$item->image)}}" alt=""></a>
 			</div>
 			<ul class="tags">
-				<li><a href="{{route('category', ['id'=>$item->category->id])}}">{{$item->category->name}}</a></li>
+				<li><a href="{{route('category', ['id'=>$item->category->id, 'slug'=>$item->category->slug])}}">{{$item->category->name}}</a></li>
 			</ul>
 		</div>
 		<div class="col-lg-7 post-right">
 			<a href="image-post.html">
-				<a href="{{route('detail', ['id'=>$item->id])}}"><h4>{{$item->title}}</h4></a>
+				<a href="{{route('detail', ['id'=>$item->id, 'slug'=>$item->slug])}}"><h4>{{$item->title}}</h4></a>
 			</a>
 			<ul class="meta">
 				<li><span class="lnr lnr-user"></span>{{$item->user->name}}</li>

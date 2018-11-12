@@ -12,12 +12,12 @@ class ComposerStaticInita8439631d728a23eef01faa8a76a9211
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
-        '538ca81a9a966a6716601ecf48f4eaef' => __DIR__ . '/..' . '/opis/closure/functions.php',
-        'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
-        '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
         '34122c0574b76bf21c9a8db62b5b9cf3' => __DIR__ . '/..' . '/cakephp/chronos/src/carbon_compat.php',
         'ed33d19cba977f2a7e321f120d94a872' => __DIR__ . '/..' . '/spatie/once/src/functions.php',
+        '538ca81a9a966a6716601ecf48f4eaef' => __DIR__ . '/..' . '/opis/closure/functions.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
+        'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
+        '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '0d8253363903f0ac7b0978dcde4e28a0' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/helpers.php',
     );
@@ -57,11 +57,7 @@ class ComposerStaticInita8439631d728a23eef01faa8a76a9211
             'Symfony\\Component\\Debug\\' => 24,
             'Symfony\\Component\\CssSelector\\' => 30,
             'Symfony\\Component\\Console\\' => 26,
-            'Spatie\\Translatable\\' => 20,
-            'Spatie\\Tags\\' => 12,
-            'Spatie\\TagsField\\' => 17,
             'Spatie\\Once\\' => 12,
-            'Spatie\\EloquentSortable\\' => 24,
         ),
         'R' => 
         array (
@@ -222,25 +218,9 @@ class ComposerStaticInita8439631d728a23eef01faa8a76a9211
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
         ),
-        'Spatie\\Translatable\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/spatie/laravel-translatable/src',
-        ),
-        'Spatie\\Tags\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/spatie/laravel-tags/src',
-        ),
-        'Spatie\\TagsField\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/spatie/nova-tags-field/src',
-        ),
         'Spatie\\Once\\' => 
         array (
             0 => __DIR__ . '/..' . '/spatie/once/src',
-        ),
-        'Spatie\\EloquentSortable\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/spatie/eloquent-sortable/src',
         ),
         'Richardkeep\\NovaTimenow\\' => 
         array (
@@ -3501,22 +3481,8 @@ class ComposerStaticInita8439631d728a23eef01faa8a76a9211
         'SebastianBergmann\\Timer\\RuntimeException' => __DIR__ . '/..' . '/phpunit/php-timer/src/RuntimeException.php',
         'SebastianBergmann\\Timer\\Timer' => __DIR__ . '/..' . '/phpunit/php-timer/src/Timer.php',
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
-        'Spatie\\EloquentSortable\\Sortable' => __DIR__ . '/..' . '/spatie/eloquent-sortable/src/Sortable.php',
-        'Spatie\\EloquentSortable\\SortableTrait' => __DIR__ . '/..' . '/spatie/eloquent-sortable/src/SortableTrait.php',
         'Spatie\\Once\\Backtrace' => __DIR__ . '/..' . '/spatie/once/src/Backtrace.php',
         'Spatie\\Once\\MemoizeAwareTrait' => __DIR__ . '/..' . '/spatie/once/src/MemoizeAwareTrait.php',
-        'Spatie\\TagsField\\Http\\Controllers\\TagsFieldController' => __DIR__ . '/..' . '/spatie/nova-tags-field/src/Http/Controllers/TagsFieldController.php',
-        'Spatie\\TagsField\\Http\\Middleware\\Authorize' => __DIR__ . '/..' . '/spatie/nova-tags-field/src/Http/Middleware/Authorize.php',
-        'Spatie\\TagsField\\Tags' => __DIR__ . '/..' . '/spatie/nova-tags-field/src/Tags.php',
-        'Spatie\\TagsField\\TagsFieldServiceProvider' => __DIR__ . '/..' . '/spatie/nova-tags-field/src/TagsFieldServiceProvider.php',
-        'Spatie\\Tags\\HasSlug' => __DIR__ . '/..' . '/spatie/laravel-tags/src/HasSlug.php',
-        'Spatie\\Tags\\HasTags' => __DIR__ . '/..' . '/spatie/laravel-tags/src/HasTags.php',
-        'Spatie\\Tags\\Tag' => __DIR__ . '/..' . '/spatie/laravel-tags/src/Tag.php',
-        'Spatie\\Tags\\TagsServiceProvider' => __DIR__ . '/..' . '/spatie/laravel-tags/src/TagsServiceProvider.php',
-        'Spatie\\Translatable\\Events\\TranslationHasBeenSet' => __DIR__ . '/..' . '/spatie/laravel-translatable/src/Events/TranslationHasBeenSet.php',
-        'Spatie\\Translatable\\Exceptions\\AttributeIsNotTranslatable' => __DIR__ . '/..' . '/spatie/laravel-translatable/src/Exceptions/AttributeIsNotTranslatable.php',
-        'Spatie\\Translatable\\HasTranslations' => __DIR__ . '/..' . '/spatie/laravel-translatable/src/HasTranslations.php',
-        'Spatie\\Translatable\\TranslatableServiceProvider' => __DIR__ . '/..' . '/spatie/laravel-translatable/src/TranslatableServiceProvider.php',
         'Symfony\\Component\\Console\\Application' => __DIR__ . '/..' . '/symfony/console/Application.php',
         'Symfony\\Component\\Console\\CommandLoader\\CommandLoaderInterface' => __DIR__ . '/..' . '/symfony/console/CommandLoader/CommandLoaderInterface.php',
         'Symfony\\Component\\Console\\CommandLoader\\ContainerCommandLoader' => __DIR__ . '/..' . '/symfony/console/CommandLoader/ContainerCommandLoader.php',

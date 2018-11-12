@@ -8,15 +8,15 @@
 			<div class="feature-img-wrap relative">
 				<div class="feature-img relative">
 					<div class="overlay overlay-bg"></div>
-					<a href="{{route('detail', ['id'=>$post1->id])}}"><img class="img-fluid" src="{{asset('storage/'.$post1->image)}}" alt=""></a>
+					<a href="{{route('detail', ['id'=>$post1->id, 'slug'=>$post1->slug])}}"><img class="img-fluid" src="{{asset('storage/'.$post1->image)}}" alt=""></a>
 				</div>
 				<ul class="tags">
-					<li><a href="{{route('category', ['id'=>$post1->category->id])}}">{{$post1->category->name}}</a></li>
+					<li><a href="{{route('category', ['id'=>$post1->category->id, 'slug'=>$post1->category->slug])}}">{{$post1->category->name}}</a></li>
 				</ul>
 			</div>
 			<div class="details">
 				<a href="image-post.html">
-					<a href="{{route('detail', ['id'=>$post1->id])}}"><h4 class="mt-20">{{$post1->title}}</h4></a>
+					<a href="{{route('detail', ['id'=>$post1->id, 'slug'=>$post1->slug])}}"><h4 class="mt-20">{{$post1->title}}</h4></a>
 				</a>
 				<ul class="meta">
 					<li><span class="lnr lnr-user"></span>{{$post1->user->name}}</li>
@@ -32,10 +32,10 @@
 				@foreach($newPost as $ps)
 				<div class="single-post d-flex flex-row">
 					<div class="thumb">
-						<a href="{{route('detail', ['id'=>$ps->id])}}"><img style="width: 100px; height: 80px;" src="{{asset('storage/'.$ps->image)}}" alt=""></a>
+						<a href="{{route('detail', ['id'=>$ps->id, 'slug'=>$ps->slug])}}"><img style="width: 100px; height: 80px;" src="{{asset('storage/'.$ps->image)}}" alt=""></a>
 					</div>
 					<div class="detail">
-						<a href="{{route('detail', ['id'=>$ps->id])}}"><h6 style="word-wrap: break-word;">{{$ps->title}}</h6></a>
+						<a href="{{route('detail', ['id'=>$ps->id, 'slug'=>$ps->slug])}}"><h6 style="word-wrap: break-word;">{{$ps->title}}</h6></a>
 						<ul class="meta">
 							<li><span class="lnr lnr-calendar-full"></span>{{date('F j, Y', strtotime($ps['created_at'])) }}</li>
 							<li><span class="lnr lnr-eye"></span>{{$ps->view}} lượt xem</li>
@@ -73,10 +73,10 @@
 		@foreach($mostView as $mv)
 		<div class="single-list flex-row d-flex">
 			<div class="thumb">
-				<a href="{{route('detail', ['id'=>$mv->id])}}"><img style="width: 100px; height: 80px;" src="{{asset('storage/'.$mv->image)}}" alt=""></a>
+				<a href="{{route('detail', ['id'=>$mv->id, 'slug'=>$mv->slug])}}"><img style="width: 100px; height: 80px;" src="{{asset('storage/'.$mv->image)}}" alt=""></a>
 			</div>
 			<div class="details">
-				<a href="{{route('detail', ['id'=>$mv->id])}}">
+				<a href="{{route('detail', ['id'=>$mv->id, 'slug'=>$mv->slug])}}">
 					<h6 style="word-wrap: break-word;">{{$mv->title}}</h6>
 				</a>
 				<ul class="meta">

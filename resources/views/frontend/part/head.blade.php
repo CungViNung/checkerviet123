@@ -14,7 +14,7 @@
 	<base href="{{asset('frontend')}}/">
 	<!-- Site Title -->
 	<title>@yield('title')</title>
-	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,500i,700,700i,900,900i&amp;subset=vietnamese" rel="stylesheet"> 
 		<!--
 		CSS
 		============================================= -->

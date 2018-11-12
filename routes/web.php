@@ -12,8 +12,8 @@
 */
 Route::group(['prefix'=>'/'], function() {
 	Route::get('', 'FrontendController@index')->name('index');
-	Route::get('category/{id}', 'FrontendController@category')->name('category');
-	Route::get('post/{id}', 'FrontendController@detail')->name('detail');
+	Route::get('category/{id}/{slug}', 'FrontendController@category')->name('category');
+	Route::get('post/{id}/{slug}', 'FrontendController@detail')->name('detail');
 	Route::get('tag/{id}', 'FrontendController@tag')->name('tag');
 	Route::get('search', 'FrontendController@search')->name('search');
 });

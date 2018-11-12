@@ -12,6 +12,7 @@ use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Fields\Select;
 use Laravel\Nova\Fields\Textarea;
+use Laravel\Nova\Fields\Trix;
 
 class Post extends Resource
 {
@@ -61,14 +62,12 @@ class Post extends Resource
             Textarea::make('Description')
                 ->rules('max:225'),
 
-            Textarea::make('Content'),
+            Trix::make('Content'),
 
             Image::make('Image')
                 ->disk('public')
                 ->path('post')
-                ->rules('required')
-                ->storeOriginalName('image')
-                ->prunable(),
+                ->rules('required'),
 
             BelongsTo::make('Category', 'category', 'App\Nova\Categories'),
 
@@ -81,7 +80,6 @@ class Post extends Resource
                     '3' => 'Không phê duyệt',
                 ])
                 ->hideFromIndex()
-                ->hideWhenCreating()
                 ->hideFromDetail(),
 
             Indicator::make('Status')

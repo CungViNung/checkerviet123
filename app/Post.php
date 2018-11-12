@@ -7,7 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
-    use \Spatie\Tags\HasTags;
     protected $table = 'posts';
     protected $primaryKey = 'id';
     protected $fillable = ['title', 'content', 'description', 'status', 'image', 'category_id'];
